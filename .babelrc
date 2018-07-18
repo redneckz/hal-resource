@@ -1,0 +1,14 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        ["env", {"loose": true}]
+      ],
+      "plugins": [
+        "transform-flow-comments",
+        "transform-class-properties",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}

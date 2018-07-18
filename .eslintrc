@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "import"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": ["rollup.config.js", "**/*.spec.js"]
+    }],
+    "no-use-before-define": ["error", {"functions": false}],
+    "function-paren-newline": ["error", "consistent"],
+    "implicit-arrow-linebreak": "off",
+    "no-underscore-dangle": "off"
+  }
+}
