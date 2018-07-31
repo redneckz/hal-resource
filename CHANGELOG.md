@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## 0.0.1 - 2018-07-18
+## 0.0.1 - 2018-07-31
 
 ### Added
 
-[Unreleased]: https://github.com/redneckz/hal-resource/compare/v0.0.1...HEAD
+-   HAL resource utility to declare resources and manage relevant data
+-   Mics. utilities to format/parse query, to clean up templated URLs
+-   Basic documentation
+-   Rollup, Babel, Flow configs
+
+[unreleased]: https://github.com/redneckz/hal-resource/compare/v0.0.1...HEAD
 [0.0.2]: https://github.com/redneckz/hal-resource/compare/v0.0.1...v0.0.2
