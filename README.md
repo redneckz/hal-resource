@@ -1,6 +1,6 @@
 # hal-resource
 
-REST+HAL client for Browser and NodeJS
+[REST+HAL](http://stateless.co/hal_specification.html) client for Browser and NodeJS
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -20,7 +20,24 @@ $ yarn add @redneckz/hal-resource
 
 ## Basics
 
-...
+```js
+import { HALResource } from '@redneckz/hal-resource';
+
+const resource = HALResource(window.fetch); // Axios can be used for NodeJS
+
+const customersResource = resource('https://foo.com/api/v1/customers');
+
+const sortedCustomers = customersResource.getList({ sort: { field: 'name', order: 'ASC' } });
+sortedCustomers.then(console.log);
+
+const firstCustomer = customersResource.getOne('first-customer-id');
+firstCustomer.then(console.log);
+
+const newCustomer = customersResource.create({ name: 'New Customer' });
+newCustomer.then(console.log);
+
+customersResource.delete('first-customer-id');
+```
 
 # License
 

@@ -44,7 +44,6 @@ export default {
             plugins: [
                 'transform-flow-strip-types',
                 'external-helpers',
-                'transform-class-properties',
                 'transform-object-rest-spread',
             ],
         }),

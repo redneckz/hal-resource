@@ -5,8 +5,7 @@
         ["env", {"loose": true}]
       ],
       "plugins": [
-        "transform-flow-comments",
-        "transform-class-properties",
+        "transform-flow-strip-types",
         "transform-object-rest-spread"
       ]
     }
