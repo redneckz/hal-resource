@@ -1,6 +1,7 @@
 // @flow
 import type { HALResponse, HALEntity, HALEndpointFactory } from './hal-resource-types';
 import { cleanupTemplatedHref } from './cleanup-templated-href';
+import { retrieveShortIdFromHref } from './retrieve-short-id-from-href';
 
 export function prepareHALResponse(endpointFactory: HALEndpointFactory): HALResponse => HALEntity {
     const mapResponse = (response = {}) => {
@@ -66,9 +67,4 @@ export function prepareHALResponse(endpointFactory: HALEndpointFactory): HALResp
         }
         return val;
     }
-}
-
-function retrieveShortIdFromHref(href: string | void | null): string {
-    const cleanHref = cleanupTemplatedHref(href);
-    return cleanHref.substr(cleanHref.lastIndexOf('/') + 1);
 }

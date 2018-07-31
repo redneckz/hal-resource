@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.0.2] - 2018-07-31
+
+### Added
+
+-   Utility to retrieve resource short id from resource URI
+
 ## 0.0.1 - 2018-07-31
 
 ### Added
@@ -16,5 +22,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 -   Basic documentation
 -   Rollup, Babel, Flow configs
 
-[unreleased]: https://github.com/redneckz/hal-resource/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/redneckz/hal-resource/compare/v0.0.2...HEAD
 [0.0.2]: https://github.com/redneckz/hal-resource/compare/v0.0.1...v0.0.2
