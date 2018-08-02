@@ -58,14 +58,6 @@ function doFetchJSON(doFetch: typeof fetch): typeof fetch {
                 ...(options && options.headers ? options.headers : {}),
                 Accept: 'application/json',
                 'Content-Type': 'application/json',
-                ...(typeof window === 'object'
-                && window
-                && window.location.host
-                && window.location.host.indexOf('localhost') !== 0
-                    ? {
-                        'X-Forwarded-Host': window.location.host,
-                    }
-                    : {}),
             },
         };
         return doFetch(url, opts);
