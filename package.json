@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/hal-resource",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Alexander Alexandrov",
   "description": "REST+HAL client for Browser and NodeJS",
   "keywords": [
