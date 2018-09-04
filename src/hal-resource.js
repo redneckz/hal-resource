@@ -39,8 +39,8 @@ export function HALResource(doFetch: typeof fetch): HALEndpointFactory {
             rawGet(id, query) {
                 return fetchJSON(computeURL(id, query));
             },
-            rawPost(data) {
-                return fetchJSON(computeURL(), {
+            rawPost(data, query) {
+                return fetchJSON(computeURL(undefined, query), {
                     method: 'POST',
                     body: JSON.stringify(data || {}),
                 });

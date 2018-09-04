@@ -33,7 +33,7 @@ export type HALEndpoint<T> = {|
     create: (data?: Object) => Promise<T>,
     delete: (id?: string) => Promise<void>,
     update: (id?: string, data?: Object) => Promise<T>,
-    rawPost: (data?: Object) => Promise<Response>,
+    rawPost: (data?: Object, query?: { [string]: mixed }) => Promise<Response>,
     rawGet: (id?: string, query?: { [string]: mixed }) => Promise<Response>,
 |};
 
